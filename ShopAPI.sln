@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Query", "Query\Query.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation.Facade", "Presentation.Facade\Presentation.Facade.csproj", "{10482409-DE83-47D2-BB72-937C28005B6F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{E57956D9-0DBC-4202-B492-A9C88555C393}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Domain", "Common\Common.Domain\Common.Domain.csproj", "{5359A1D4-BD8E-4148-B5CD-B7D710DCE8D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,9 +43,16 @@ Global
 		{10482409-DE83-47D2-BB72-937C28005B6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10482409-DE83-47D2-BB72-937C28005B6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10482409-DE83-47D2-BB72-937C28005B6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5359A1D4-BD8E-4148-B5CD-B7D710DCE8D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5359A1D4-BD8E-4148-B5CD-B7D710DCE8D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5359A1D4-BD8E-4148-B5CD-B7D710DCE8D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5359A1D4-BD8E-4148-B5CD-B7D710DCE8D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5359A1D4-BD8E-4148-B5CD-B7D710DCE8D3} = {E57956D9-0DBC-4202-B492-A9C88555C393}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5D267025-02F3-487A-8A11-A9EF6B1FBA9D}
