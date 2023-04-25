@@ -1,6 +1,6 @@
 ﻿using Common.Domain;
 using Common.Domain.Exceptions;
-using Domain.Enums;
+using Domain.UserAgg.Enums;
 
 namespace Domain.UserAgg;
 

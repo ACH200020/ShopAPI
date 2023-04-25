@@ -1,8 +1,8 @@
 ﻿using System.Xml.Serialization;
 using Common.Domain;
 using Common.Domain.Exceptions;
-using Domain.Enums;
-using Domain.Services;
+using Domain.UserAgg.Enums;
+using Domain.UserAgg.Services;
 
 namespace Domain.UserAgg;
 

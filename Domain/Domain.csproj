@@ -11,9 +11,18 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Enums\" />
-    <Folder Include="Services\" />
-    <Folder Include="UserAgg\" />
+    <Folder Include="CategoryAgg\Repository\" />
+    <Folder Include="CategoryAgg\Services\" />
+    <Folder Include="CommentAgg\Repository\" />
+    <Folder Include="ProductAgg\" />
+    <Folder Include="OrderAgg\Enum\" />
+    <Folder Include="OrderAgg\Events\" />
+    <Folder Include="OrderAgg\Repository\" />
+    <Folder Include="OrderAgg\ValueObject\" />
+    <Folder Include="RoleAgg\Enum\" />
+    <Folder Include="RoleAgg\Repository\" />
+    <Folder Include="UserAgg\Enums\" />
+    <Folder Include="UserAgg\Services\" />
   </ItemGroup>
 
 </Project>

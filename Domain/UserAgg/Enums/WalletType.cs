@@ -1,4 +1,4 @@
-﻿namespace Domain.Enums;
+﻿namespace Domain.UserAgg.Enums;
 
 public enum WalletType
 {
