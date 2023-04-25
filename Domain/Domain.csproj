@@ -14,11 +14,12 @@
     <Folder Include="CategoryAgg\Repository\" />
     <Folder Include="CategoryAgg\Services\" />
     <Folder Include="CommentAgg\Repository\" />
-    <Folder Include="ProductAgg\" />
     <Folder Include="OrderAgg\Enum\" />
     <Folder Include="OrderAgg\Events\" />
     <Folder Include="OrderAgg\Repository\" />
     <Folder Include="OrderAgg\ValueObject\" />
+    <Folder Include="ProductAgg\Services\" />
+    <Folder Include="ProductAgg\Repository\" />
     <Folder Include="RoleAgg\Enum\" />
     <Folder Include="RoleAgg\Repository\" />
     <Folder Include="UserAgg\Enums\" />
