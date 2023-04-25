@@ -1,6 +1,7 @@
 ﻿using Common.Domain;
 using Common.Domain.Exceptions;
 using Domain.SellerAgg.Enum;
+using Domain.SellerAgg.Services;
 
 namespace Domain.SellerAgg;
 
