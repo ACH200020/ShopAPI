@@ -7,23 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Common\Common.Domain\Common.Domain.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="CategoryAgg\Repository\" />
-    <Folder Include="CategoryAgg\Services\" />
-    <Folder Include="CommentAgg\Repository\" />
-    <Folder Include="OrderAgg\Enum\" />
-    <Folder Include="OrderAgg\Events\" />
-    <Folder Include="OrderAgg\Repository\" />
-    <Folder Include="OrderAgg\ValueObject\" />
-    <Folder Include="ProductAgg\Services\" />
-    <Folder Include="ProductAgg\Repository\" />
-    <Folder Include="RoleAgg\Enum\" />
-    <Folder Include="RoleAgg\Repository\" />
-    <Folder Include="UserAgg\Enums\" />
-    <Folder Include="UserAgg\Services\" />
+    <ProjectReference Include="..\Common\Common.Domian\Common.Domian.csproj" />
   </ItemGroup>
 
 </Project>

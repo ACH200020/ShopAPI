@@ -1,6 +1,7 @@
-﻿using Common.Domain.Repository;
+﻿
+using Common.Domian.Repository;
 
-namespace Domain.SiteEntities.Repositories;
+namespace Shop.Domain.SiteEntities.Repositories;
 
 public interface IShippingMethodRepository : IBaseRepository<ShippingMethod>
 {

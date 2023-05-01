@@ -1,74 +1,86 @@
-﻿using Common.Domain;
-using Common.Domain.Exceptions;
+﻿
+using Common.Domian;
+using Common.Domian.Exceptions;
+using Common.Domian.ValueObjects;
 
-namespace Domain.UserAgg;
-
-public class UserAddress : BaseEntity
+namespace Shop.Domain.UserAgg
 {
-    public UserAddress(string shire, string postalCode, string postalAddress, string city, string phoneNumber, string name, string family, string nationalCode, bool activeAddress)
+    public class UserAddress : BaseEntity
     {
+        private UserAddress()
+        {
+            
+        }
+        public UserAddress(string shire, string city, string postalCode, string postalAddress,
+            PhoneNumber phoneNumber, string name, string family, string nationalCode)
+        {
+            Guard(shire, city, postalCode, postalAddress,
+                phoneNumber, name, family, nationalCode);
 
-        Guard(shire, postalCode, postalAddress, city, phoneNumber,
-            name, family, nationalCode);
-        Shire = shire;
-        PostalCode = postalCode;
-        PostalAddress = postalAddress;
-        City = city;
-        PhoneNumber = phoneNumber;
-        Name = name;
-        Family = family;
-        NationalCode = nationalCode;
-        ActiveAddress = activeAddress;
-    }
-    public long UserId { get; internal set; }
-    public string Shire { get; private set; }
-    public string PostalCode { get; private set; }
-    public string PostalAddress { get; private set; }
-    public string City { get; private set; }
-    public string PhoneNumber { get; private set; }
-    public string Name { get; private set; }
-    public string Family { get; private set; }
-    public string NationalCode { get; private set; }
-    public bool ActiveAddress { get; private set; }
+            Shire = shire;
+            City = city;
+            PostalCode = postalCode;
+            PostalAddress = postalAddress;
+            PhoneNumber = phoneNumber;
+            Name = name;
+            Family = family;
+            NationalCode = nationalCode;
+            ActiveAddress = false;
+        }
 
-    public void Edit(string shire, string postalCode, string postalAddress, string city, string phoneNumber,
-        string name, string family, string nationalCode)
-    {
-        Guard(shire, postalCode, postalAddress, city, phoneNumber,
-             name, family, nationalCode);
-        Shire = shire;
-        PostalCode = postalCode;
-        PostalAddress = postalAddress;
-        City = city;
-        PhoneNumber = phoneNumber;
-        Name = name;
-        Family = family;
-        NationalCode = nationalCode;
-    }
+        public long UserId { get; internal set; }
+        public string Shire { get; private set; }
+        public string City { get; private set; }
+        public string PostalCode { get; private set; }
+        public string PostalAddress { get; private set; }
+        public PhoneNumber PhoneNumber { get; private set; }
+        public string Name { get; private set; }
+        public string Family { get; private set; }
+        public string NationalCode { get; private set; }
+        public bool ActiveAddress { get; private set; }
 
-    public void SetActive()
-    {
-        ActiveAddress = true;
-    }
+        public void Edit(string shire, string city, string postalCode, string postalAddress,
+            PhoneNumber phoneNumber, string name, string family, string nationalCode)
+        {
+            Guard(shire, city, postalCode, postalAddress,
+                 phoneNumber, name, family, nationalCode);
 
-    public void SetDeActive()
-    {
-        ActiveAddress = false;
-    }
+            Shire = shire;
+            City = city;
+            PostalCode = postalCode;
+            PostalAddress = postalAddress;
+            PhoneNumber = phoneNumber;
+            Name = name;
+            Family = family;
+            NationalCode = nationalCode;
+        }
 
-    public void Guard(string shire, string postalCode, string postalAddress, string city, string phoneNumber,
-        string name, string family, string nationalCode)
-    {
-        NullOrEmptyDomainDataException.CheckString(shire, nameof(shire));
-        NullOrEmptyDomainDataException.CheckString(postalCode, nameof(postalCode));
-        NullOrEmptyDomainDataException.CheckString(postalAddress, nameof(postalAddress));
-        NullOrEmptyDomainDataException.CheckString(city, nameof(city));
-        NullOrEmptyDomainDataException.CheckString(phoneNumber, nameof(phoneNumber));
-        NullOrEmptyDomainDataException.CheckString(name, nameof(name));
-        NullOrEmptyDomainDataException.CheckString(family, nameof(family));
+        public void SetActive()
+        {
+            ActiveAddress = true;
+        }
 
-        if (IranianNationalIdChecker.IsValid(nationalCode) == false)
-            throw new InvalidDomainDataException("کدملی نامعتبر است");
-        
+        public void SetDeActive()
+        {
+            ActiveAddress = false;
+
+        }
+        public void Guard(string shire, string city, string postalCode, string postalAddress,
+            PhoneNumber phoneNumber, string name, string family, string nationalCode)
+        {
+            if (phoneNumber == null)
+                throw new NullOrEmptyDomainDataException();
+
+            NullOrEmptyDomainDataException.CheckString(shire, nameof(shire));
+            NullOrEmptyDomainDataException.CheckString(city, nameof(city));
+            NullOrEmptyDomainDataException.CheckString(postalCode, nameof(postalCode));
+            NullOrEmptyDomainDataException.CheckString(postalAddress, nameof(postalAddress));
+            NullOrEmptyDomainDataException.CheckString(name, nameof(name));
+            NullOrEmptyDomainDataException.CheckString(family, nameof(family));
+            NullOrEmptyDomainDataException.CheckString(nationalCode, nameof(nationalCode));
+
+            if (IranianNationalIdChecker.IsValid(nationalCode) == false)
+                throw new InvalidDomainDataException("کدملی نامعتبر است");
+        }
     }
 }

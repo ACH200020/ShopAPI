@@ -1,7 +1,8 @@
-﻿using Common.Domain;
-using Common.Domain.Exceptions;
+﻿
+using Common.Domian;
+using Common.Domian.Exceptions;
 
-namespace Domain.SiteEntities;
+namespace Shop.Domain.SiteEntities;
 
 public class ShippingMethod : BaseEntity
 {

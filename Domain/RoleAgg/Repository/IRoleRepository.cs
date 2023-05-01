@@ -1,8 +1,7 @@
-﻿using Common.Domain.Repository;
+﻿
+using Common.Domian.Repository;
 
-namespace Domain.RoleAgg.Repository;
-
+namespace Shop.Domain.RoleAgg.Repository;
 public interface IRoleRepository : IBaseRepository<Role>
 {
-    
 }

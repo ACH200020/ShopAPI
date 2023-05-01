@@ -1,11 +1,7 @@
-﻿using Common.Domain.Repository;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using Common.Domian.Repository;
 
-namespace Domain.SellerAgg.Repository
+namespace Shop.Domain.SellerAgg.Repository
 {
     public interface ISellerRepository : IBaseRepository<Seller>
     {

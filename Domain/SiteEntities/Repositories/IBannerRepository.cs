@@ -1,12 +1,10 @@
-﻿using Common.Domain.Repository;
-using Domain.SiteEntities;
-using System;
-using System.Collections.Generic;
+﻿
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Common.Domian.Repository;
 
-namespace Domain.SiteEntities.Repositories
+namespace Shop.Domain.SiteEntities.Repositories
 {
     public interface IBannerRepository : IBaseRepository<Banner>
     {

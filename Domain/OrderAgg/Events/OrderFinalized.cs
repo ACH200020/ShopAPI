@@ -1,6 +1,7 @@
-﻿using Common.Domain;
+﻿using Common.Domian;
+using MediatR;
 
-namespace Domain.OrderAgg.Events;
+namespace Shop.Domain.OrderAgg.Events;
 
 public class OrderFinalized : BaseDomainEvent
 {

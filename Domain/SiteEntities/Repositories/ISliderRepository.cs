@@ -1,7 +1,7 @@
-﻿using Common.Domain.Repository;
-using Domain.SiteEntities;
+﻿
+using Common.Domian.Repository;
 
-namespace Domain.SiteEntities.Repositories
+namespace Shop.Domain.SiteEntities.Repositories
 {
     public interface ISliderRepository : IBaseRepository<Slider>
     {

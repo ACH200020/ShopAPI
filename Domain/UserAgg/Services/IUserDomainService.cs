@@ -1,7 +1,9 @@
-﻿namespace Domain.UserAgg.Services;
-
-public interface IUserDomainService
+﻿namespace Shop.Domain.UserAgg.Services
 {
-    bool IsEmailExist(string email);
-    bool PhoneNumberIsExist(string phoneNumber);
+    public interface IUserDomainService
+    {
+        bool IsEmailExist(string email);
+
+        bool PhoneNumberIsExist(string phoneNumber);
+    }
 }

@@ -1,8 +1,8 @@
-﻿using Common.Domain.Repository;
+﻿using Common.Domian.Repository;
 
-namespace Domain.ProductAgg.Repository;
-
-public interface IProductRepository : IBaseRepository<Product>
+namespace Shop.Domain.ProductAgg.Repository
 {
-    
+    public interface IProductRepository : IBaseRepository<Product>
+    {
+    }
 }

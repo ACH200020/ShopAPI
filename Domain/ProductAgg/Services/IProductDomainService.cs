@@ -1,6 +1,13 @@
-﻿namespace Domain.ProductAgg.Services;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-public interface IProductDomainService
+namespace Shop.Domain.ProductAgg.Services
 {
-    bool SlugIsExist(string slug);
+    public interface IProductDomainService
+    {
+        bool SlugIsExist(string slug);
+    }
 }

@@ -1,4 +1,4 @@
-﻿namespace Domain.SellerAgg.Services;
+﻿namespace Shop.Domain.SellerAgg.Services;
 
 public interface ISellerDomainService
 {

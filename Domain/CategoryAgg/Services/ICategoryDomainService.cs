@@ -1,6 +1,13 @@
-﻿namespace Domain.CategoryAgg.Services;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-public interface ICategoryDomainService
+namespace Shop.Domain.CategoryAgg.Services
 {
-    public bool IsSlugExist(string slug);
+    public interface ICategoryDomainService
+    {
+        public bool IsSlugExist(string slug);
+    }
 }
