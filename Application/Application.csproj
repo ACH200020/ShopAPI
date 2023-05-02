@@ -11,4 +11,18 @@
     <ProjectReference Include="..\Domain\Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Categories\Create\" />
+    <Folder Include="Categories\Edit\" />
+    <Folder Include="Categories\Remove\" />
+    <Folder Include="Comments\Create\" />
+    <Folder Include="Comments\Edit\" />
+    <Folder Include="Comments\Delete\" />
+    <Folder Include="Comments\ChangeStatus\" />
+    <Folder Include="Products\Create\" />
+    <Folder Include="Products\Edit\" />
+    <Folder Include="Products\AddImage\" />
+    <Folder Include="Products\RemoveImage\" />
+  </ItemGroup>
+
 </Project>
