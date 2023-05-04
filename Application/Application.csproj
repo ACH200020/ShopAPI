@@ -19,10 +19,32 @@
     <Folder Include="Comments\Edit\" />
     <Folder Include="Comments\Delete\" />
     <Folder Include="Comments\ChangeStatus\" />
+    <Folder Include="Orders\AddItem\" />
+    <Folder Include="Orders\Checkout\" />
+    <Folder Include="Orders\DecreaseItemCount\" />
+    <Folder Include="Orders\Finally\" />
+    <Folder Include="Orders\IncreaseItemCount\" />
+    <Folder Include="Orders\SendOrder\" />
+    <Folder Include="Orders\RemoveItem\" />
     <Folder Include="Products\Create\" />
     <Folder Include="Products\Edit\" />
     <Folder Include="Products\AddImage\" />
     <Folder Include="Products\RemoveImage\" />
+    <Folder Include="Roles\Create\" />
+    <Folder Include="Roles\Edit\" />
+    <Folder Include="Sellers\AddInventory\" />
+    <Folder Include="Sellers\Create\" />
+    <Folder Include="Sellers\Edit\" />
+    <Folder Include="Sellers\EditInventory\" />
+    <Folder Include="SiteEntities\Banners\Create\" />
+    <Folder Include="SiteEntities\Banners\Edit\" />
+    <Folder Include="SiteEntities\Banners\Delete\" />
+    <Folder Include="SiteEntities\ShippingMethods\Create\" />
+    <Folder Include="SiteEntities\ShippingMethods\Delete\" />
+    <Folder Include="SiteEntities\ShippingMethods\Edit\" />
+    <Folder Include="SiteEntities\Sliders\Create\" />
+    <Folder Include="SiteEntities\Sliders\Delete\" />
+    <Folder Include="SiteEntities\Sliders\Edit\" />
   </ItemGroup>
 
 </Project>

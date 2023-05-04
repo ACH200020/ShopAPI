@@ -1,6 +1,6 @@
 ﻿using Common.Application.FileUtil;
 using Common.Application.SecurityUtil;
-using Common.Domain;
+using Common.Domian;
 using FluentValidation;
 using Microsoft.AspNetCore.Http;
 
