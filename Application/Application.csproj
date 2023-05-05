@@ -21,10 +21,8 @@
     <Folder Include="Comments\ChangeStatus\" />
     <Folder Include="Orders\AddItem\" />
     <Folder Include="Orders\Checkout\" />
-    <Folder Include="Orders\DecreaseItemCount\" />
     <Folder Include="Orders\Finally\" />
     <Folder Include="Orders\IncreaseItemCount\" />
-    <Folder Include="Orders\SendOrder\" />
     <Folder Include="Orders\RemoveItem\" />
     <Folder Include="Products\Create\" />
     <Folder Include="Products\Edit\" />
@@ -45,6 +43,17 @@
     <Folder Include="SiteEntities\Sliders\Create\" />
     <Folder Include="SiteEntities\Sliders\Delete\" />
     <Folder Include="SiteEntities\Sliders\Edit\" />
+    <Folder Include="Users\AddAddress\" />
+    <Folder Include="Users\AddToken\" />
+    <Folder Include="Users\ChangePassword\" />
+    <Folder Include="Users\ChangeWallet\" />
+    <Folder Include="Users\Create\" />
+    <Folder Include="Users\DeleteAddress\" />
+    <Folder Include="Users\Edit\" />
+    <Folder Include="Users\EditAddress\" />
+    <Folder Include="Users\SetActiveAddress\" />
+    <Folder Include="Users\RemoveToken\" />
+    <Folder Include="Users\Register\" />
   </ItemGroup>
 
 </Project>
