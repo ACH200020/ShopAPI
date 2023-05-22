@@ -1,8 +1,9 @@
 ﻿using Shop.Domain.ProductAgg.Repository;
+using Shop.Domain.ProductAgg.Services;
 
 namespace Application.Products;
 
-public class ProductDomainService
+public class ProductDomainService : IProductDomainService
 {
     private readonly IProductRepository _repository;
 

@@ -1,8 +1,9 @@
 ﻿using Shop.Domain.UserAgg.Repository;
+using Shop.Domain.UserAgg.Services;
 
 namespace Application.Users;
 
-public class UserDomainService
+public class UserDomainService :IUserDomainService
 {
     private readonly IUserRepository _repository;
 
@@ -16,8 +17,10 @@ public class UserDomainService
         return _repository.Exists(r => r.Email == email);
     }
 
-    public bool PhoneNumberExist(string phoneNumber)
+    public bool PhoneNumberIsExist(string phoneNumber)
     {
         return _repository.Exists(r => r.PhoneNumber == phoneNumber);
     }
+
+    
 }

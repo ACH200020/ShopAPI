@@ -6,4 +6,26 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Categories\DTOs\" />
+    <Folder Include="Categories\GetById\" />
+    <Folder Include="Categories\GetList\" />
+    <Folder Include="Comments\DTOs\" />
+    <Folder Include="Comments\GetByFilter\" />
+    <Folder Include="Comments\GetById\" />
+    <Folder Include="Orders\DTOs\" />
+    <Folder Include="Orders\GetByFilter\" />
+    <Folder Include="Orders\GetCurrent\" />
+    <Folder Include="Users\" />
+    <Folder Include="SiteEntities\" />
+    <Folder Include="Sellers\" />
+    <Folder Include="Roles\" />
+    <Folder Include="Products\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.Query\Common.Query.csproj" />
+    <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

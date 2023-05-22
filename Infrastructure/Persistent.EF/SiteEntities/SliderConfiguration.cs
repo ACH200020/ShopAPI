@@ -18,4 +18,3 @@ public class SliderConfiguration : IEntityTypeConfiguration<Slider>
             .HasMaxLength(500);
     }
 }
-}
