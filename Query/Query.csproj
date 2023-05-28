@@ -16,11 +16,27 @@
     <Folder Include="Orders\DTOs\" />
     <Folder Include="Orders\GetByFilter\" />
     <Folder Include="Orders\GetCurrent\" />
-    <Folder Include="Users\" />
-    <Folder Include="SiteEntities\" />
-    <Folder Include="Sellers\" />
-    <Folder Include="Roles\" />
-    <Folder Include="Products\" />
+    <Folder Include="Products\DTOs\" />
+    <Folder Include="Products\GetByFilter\" />
+    <Folder Include="Products\GetById\" />
+    <Folder Include="Products\GetBySlug\" />
+    <Folder Include="Products\GetForShop\" />
+    <Folder Include="Roles\DTOs\" />
+    <Folder Include="Roles\GetById\" />
+    <Folder Include="Roles\GetList\" />
+    <Folder Include="Sellers\DTOs\" />
+    <Folder Include="Sellers\GetByFilter\" />
+    <Folder Include="Sellers\Inventories\" />
+    <Folder Include="SiteEntities\Banners\GetById\" />
+    <Folder Include="SiteEntities\Banners\GetList\" />
+    <Folder Include="SiteEntities\DTOs\" />
+    <Folder Include="SiteEntities\ShippingMethods\GetList\" />
+    <Folder Include="SiteEntities\Sliders\GetById\" />
+    <Folder Include="Users\Address\GetList\" />
+    <Folder Include="Users\DTOs\" />
+    <Folder Include="Users\GetByFilter\" />
+    <Folder Include="Users\GetById\" />
+    <Folder Include="Users\UserTokens\" />
   </ItemGroup>
 
   <ItemGroup>
