@@ -11,4 +11,15 @@
     <ProjectReference Include="..\Query\Query.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Categories\" />
+    <Folder Include="Roles\" />
+    <Folder Include="SiteEntities\Banner\" />
+    <Folder Include="SiteEntities\Slider\" />
+    <Folder Include="SiteEntities\ShippingMethod\" />
+    <Folder Include="Products\" />
+    <Folder Include="Orders\" />
+    <Folder Include="Users\Addresses\" />
+  </ItemGroup>
+
 </Project>
