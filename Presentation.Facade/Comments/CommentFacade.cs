@@ -24,7 +24,7 @@ internal class CommentFacade : ICommentFacade
         return await _mediator.Send(command);
     }
 
-    public async Task<OperationResult> CreateCommand(CreateCommentCommand command)
+    public async Task<OperationResult> CreateCommend(CreateCommentCommand command)
     {
         return await _mediator.Send(command);
 

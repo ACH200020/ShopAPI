@@ -10,7 +10,7 @@ namespace Presentation.Facade.Comments;
 public interface ICommentFacade
 {
     Task<OperationResult> ChangeStatus(ChangeCommentStatusCommand  command);
-    Task<OperationResult> CreateCommand(CreateCommentCommand command);
+    Task<OperationResult> CreateCommend(CreateCommentCommand command);
     Task<OperationResult> EditComment(EditCommentCommand command);
     Task<OperationResult> DeleteComment(DeleteCommentCommand command);
 
