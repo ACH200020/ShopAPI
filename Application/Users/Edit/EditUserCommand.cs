@@ -16,7 +16,7 @@ public class EditUserCommand : IBaseCommand
         Gender = gender;
         Avatar = avatar;
     }
-    public long UserId { get; private set; }
+    public long UserId { get; set; }
     public string Name { get; private set; }
     public string Family { get; private set; }
     public string PhoneNumber { get; private set; }

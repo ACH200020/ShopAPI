@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Presentation.Facade.Products;
 using Query.Products.DTOs;
+using ShopApi.ViewModels.Products;
 
 namespace ShopApi.Controllers
 {

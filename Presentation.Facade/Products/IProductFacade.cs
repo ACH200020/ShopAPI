@@ -11,7 +11,7 @@ namespace Presentation.Facade.Products;
 
 public interface IProductFacade
 {
-    Task<OperationResult> CategoryProduct(CreateProductCommand command);
+    Task<OperationResult> CreateProduct(CreateProductCommand command);
     Task<OperationResult> EditProduct(EditProductCommand command);
     Task<OperationResult> AddImage(AddProductImageCommand command);
     Task<OperationResult> RemoveImage(RemoveProductImageCommand command);
