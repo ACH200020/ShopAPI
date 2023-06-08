@@ -8,6 +8,7 @@ using FluentValidation;
 using Infrastructure;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
+using Presentation.Facade;
 using Query.Categories.GetById;
 using Shop.Domain.CategoryAgg.Services;
 using Shop.Domain.ProductAgg.Services;
@@ -34,6 +35,8 @@ public static class ShopBootstrapper
 
 
         services.AddValidatorsFromAssembly(typeof(CreateRoleCommandValidator).Assembly);
+
+        services.InitFacadeDependency();
 
 
     }

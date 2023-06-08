@@ -33,7 +33,6 @@
     <Folder Include="Users\DTOs\" />
     <Folder Include="Users\GetByFilter\" />
     <Folder Include="Users\GetById\" />
-    <Folder Include="Users\UserTokens\" />
   </ItemGroup>
 
   <ItemGroup>

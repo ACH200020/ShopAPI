@@ -6,6 +6,8 @@ using Config;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.OpenApi.Models;
+using Shop.Api.Infrastructure;
+using ShopApi.Infrastructure.JwtUtil;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -64,6 +66,9 @@ builder.Services.RegisterShopDependency(connectionString);
 
 CommonBootstrapper.Init(builder.Services);
 builder.Services.AddTransient<IFileService, FileService>();
+builder.Services.RegisterApiDependency(builder.Configuration);
+
+builder.Services.AddJwtAuthentication(builder.Configuration);
 
 var app = builder.Build();
 
